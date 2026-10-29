@@ -1,13 +1,34 @@
 @use 'variables' as *;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: $font-main;
-  background-color: $color-bg;
+  margin: 0;
+  background: $color-bg;
   color: $color-text;
+  font-family: $font-main;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
 }
 
 .container {
-  max-width: $container-width;
+  max-width: $container;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 24px;
 }
