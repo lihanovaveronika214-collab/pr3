@@ -1,25 +1,98 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CPS — Услуги и сервисы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Слайд 1</div>
-      <div class="swiper-slide">Слайд 2</div>
-      <div class="swiper-slide">Слайд 3</div>
-    </div>
+    <header class="header">
+      <div class="header__inner container">
+        <button class="icon-btn" type="button" aria-label="меню">
+          <img src="/src/assets/img/icons/menu.svg" alt="" />
+        </button>
 
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-</div>
+        <a class="header__logo" href="#">
+          <img src="/src/assets/img/icons/logo.svg" alt="CPS" />
+        </a>
+
+        <div class="header__actions header__actions--main">
+          <button class="icon-btn" type="button" aria-label="позвонить">
+            <img src="/src/assets/img/icons/phone.svg" alt="" />
+          </button>
+          <button class="icon-btn" type="button" aria-label="написать">
+            <img src="/src/assets/img/icons/chat.svg" alt="" />
+          </button>
+          <button class="icon-btn" type="button" aria-label="личный кабинет">
+            <img src="/src/assets/img/icons/profile.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="header__actions">
+          <button class="icon-btn" type="button" aria-label="заказать ремонт">
+            <img src="/src/assets/img/icons/repair.svg" alt="" />
+          </button>
+          <button class="icon-btn" type="button" aria-label="статус ремонта">
+            <img src="/src/assets/img/icons/status.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="page container">
+      <h1 class="page__title">Услуги и сервисы</h1>
+
+      <div class="tabs">
+        <button class="tabs__item tabs__item--active" type="button">
+          Ремонтируемые устройства
+        </button>
+        <button class="tabs__item" type="button">Дополнительные услуги</button>
+        <button class="tabs__item" type="button">Цены на услуги</button>
+        <button class="tabs__item" type="button">
+          Специальные предложения
+        </button>
+      </div>
+
+      <section class="about">
+        <div class="about__text">
+          <p>
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+          <p>
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера.
+          </p>
+          <button class="about__more" type="button">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path d="M6 7l6 6 6-6M6 13l6 6 6-6" />
+            </svg>
+            Читать далее
+          </button>
+        </div>
+
+        <figure class="about__media">
+          <img
+            src="/src/assets/img/sign.jpg"
+            alt="Вывеска CPS"
+            width="600"
+            height="400"
+          />
+        </figure>
+      </section>
+    </main>
+
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
